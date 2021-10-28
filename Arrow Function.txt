@@ -1,0 +1,78 @@
+SUM Of Array:
+let a=[1,2,3,4,5,6]
+  let sum = a.reduce((key,value)=>key+value);
+console.log(sum)
+sum:
+  let a=[1,2,3,4,5,6]
+  let sum = a.map((key)=>key%2 != 0 ? key:0);
+  console.log(sum)
+
+ODD NUM:
+let a=[1,2,3,4,5,6]
+  let oddnum= () => {
+    for (i = 0; i < a.length; i++) {
+      if (a[i] % 2 != 0)
+        console.log(a[i]);
+    }
+  }
+  oddnum();
+ 
+Median:
+
+const arr1 = [1, 12, 15, 26, 38];
+const arr2 = [2, 13, 17, 30, 45, 47];
+
+let median=(a, b) => {
+    a = arr1;
+    b = arr2;
+    let c = [...a, ...b].sort((a, b) => a - b);
+    const half = c.length / 2 | 0;
+    if (c.length % 2)
+        console.log(c[half]);
+    else {
+
+        console.log(c[half] + c[half - 1]) / 2;
+    }
+
+}
+median();
+
+Title Caps:
+let lowercase  = "the world is too small to hide"
+ let uppercase =()=>{
+      console.log(lowercase.toUpperCase());
+     
+ }
+ uppercase()
+
+Palindrome function:
+let numbers=[456,908,252,486,454]
+let palindrome=() => {
+  let temp;
+  for (let num of numbers) {
+      let r,s=0
+      temp = num;
+        while (num > 0) {
+          r =( num % 10);
+          s = (s * 10) + r;
+          num = Math.floor(num / 10);
+        }
+      
+      if (s == temp ) {
+        console.log(temp)
+    }
+  }
+   
+     }
+palindrome(); 
+
+
+
+basic ARROW function;
+
+1.let arr=[10,20,30,50,60];
+let newarr = arr.map(n=>n*2)
+  console.log(newarr);
+
+2.const sum = (num1, num2) => num1 + num2;
+console.log(sum(10, 20));

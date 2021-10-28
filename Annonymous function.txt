@@ -1,0 +1,111 @@
+Print Odd number:
+let a=[1,2,3,4,5,6]
+let oddnum= function(){
+  for(i=0;i<a.length;i++){
+if(a[i]%2 != 0)
+  console.log(a[i])
+}}
+oddnum();
+
+Title Caps:
+let lowercase  = "the world is too small to hide"
+ let uppercase = function(){
+     let a = lowercase.toUpperCase();
+     //let  b=a.toUpperCase()
+     console.log(a)
+ }
+ uppercase()
+
+Sum of Array:
+let a=[1,2,3,4,5,6]
+let sum=0;
+let oddnum= function(){
+  for(i=0;i<a.length;i++){
+  sum=sum+a[i];
+  }console.log(sum)
+}
+oddnum();
+
+PRIME NUM:
+function isPrime(element) {
+    for(var i = 2; i < element; i++) {
+      if(element % i == 0) {
+        return false;
+      }
+    }
+    return element !== 1;
+  }
+  
+  var array = [1, 5, 17, 25, 30];
+  var primes = array.filter(isPrime);
+  
+  console.log("array: " + array);
+  console.log("primes: " + primes);
+
+PALINDROME:
+let a=454
+let r,s=0,t;
+t=a;
+let palindrome=function(){
+ 
+   while(a>0){
+    r=a%10;
+    s=(s*10)+r;
+    a=a/10;}
+    if(a==t) 
+    console.log[t];
+    
+  }
+  palindrome(); 
+
+Median of two sorted arrays:
+
+const arr1 = [1, 12, 15, 26, 38];
+const arr2 = [2, 13, 17, 30, 45, 47];
+
+let median=function() {
+    a=arr1;
+    b=arr2;
+    let c = [...a, ...b].sort((a, b) => a - b);
+    const half = c.length / 2 | 0;
+    if (c.length % 2)
+        console.log (c[half]);
+    else{
+    
+    console.log (c[half] + c[half - 1]) / 2;}
+   
+}
+median();
+
+Rotating array by k times:
+var a=[1,2,3,4,5]
+let rotate = function(){
+    let arr=a,d=3
+   for(var i=d;i<arr.length;i++)
+    arr.unshift(arr.pop());
+    console.log(arr);
+}
+rotate();
+
+PALINDROME FUNCTION:
+let numbers=[456,908,252,486,454]
+let palindrome=function () {
+  let temp;
+  for (let num of numbers) {
+    let r, s = 0;
+    temp = num;
+    while (num > 0) {
+      r = (num % 10);
+      s = (s * 10) + r;
+      num = Math.floor(num / 10);
+    }
+
+    if (s == temp) {
+      console.log(temp);
+    }
+  }
+
+}
+palindrome(); 
+
+
